@@ -5,6 +5,39 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth; /* ini agar scrool ya smoot */ 
+}
+
+ul {
+    display:  flex;
+    gap: 10px;
+    background-color: #222222;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li {
+    list-style-type: none;
+    padding: 12px;
+    display: flex;
+   
+
+}
+
+li > a {
+    color: lawngreen;
+    text-decoration: none;
+
+}
+
+li > a:hover {
+   color: white;
+   transition: all 0.5s ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
 }
 
 .container {
@@ -114,4 +147,20 @@ input {
         -ms-transform: rotate(360deg);
         -o-transform: rotate(360deg);
 }
+}
+
+.aboutContainer {
+ width: 100%;
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: lawngreen;
+
+}
+
+.aboutWrapper {
+    display: flex;
+    background-color: red;
+    gap: 20px; /* ini sepasi */
 }
